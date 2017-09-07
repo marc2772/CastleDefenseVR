@@ -408,8 +408,8 @@ namespace Valve.VR.InteractionSystem
 				{
 					// Left/right relationship.
 					// Wait until we have a clear unique left-right relationship to initialize.
-					int leftIndex = SteamVR_Controller.GetDeviceIndex( SteamVR_Controller.DeviceRelation.Leftmost );
-					int rightIndex = SteamVR_Controller.GetDeviceIndex( SteamVR_Controller.DeviceRelation.Rightmost );
+					int leftIndex = SteamVR_Controller.GetDeviceIndex( SteamVR_Controller.DeviceRelation.Rightmost );
+					int rightIndex = SteamVR_Controller.GetDeviceIndex( SteamVR_Controller.DeviceRelation.Leftmost);
 					if ( leftIndex == -1 || rightIndex == -1 || leftIndex == rightIndex )
 					{
 						//Debug.Log( string.Format( "...Left/right hand relationship not yet established: leftIndex={0}, rightIndex={1}", leftIndex, rightIndex ) );
