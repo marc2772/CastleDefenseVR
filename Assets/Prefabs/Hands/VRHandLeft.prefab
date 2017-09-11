@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 114185752766010952}
   - component: {fileID: 114134263776976554}
   m_Layer: 0
-  m_Name: VRHand 1
+  m_Name: VRHandLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
