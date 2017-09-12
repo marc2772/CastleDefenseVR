@@ -370,6 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4392502418705962}
   - component: {fileID: 114672547767608336}
+  - component: {fileID: 114828856973772112}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -515,6 +516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4344299907037942}
   - component: {fileID: 114141001989341242}
+  - component: {fileID: 114086960125557434}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -546,6 +548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4572957151729896}
   - component: {fileID: 95880323260193162}
+  - component: {fileID: 114438026708949074}
   m_Layer: 0
   m_Name: VRHandLeft
   m_TagString: Untagged
@@ -583,7 +586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1658054725524754
 GameObject:
   m_ObjectHideFlags: 1
@@ -608,6 +611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4285795100887756}
   - component: {fileID: 95884446929018266}
+  - component: {fileID: 114731809037741952}
   m_Layer: 0
   m_Name: VRHandRight
   m_TagString: Untagged
@@ -1813,6 +1817,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114086960125557434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488530318913562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7346a42905a29b347b1f492e8ad7b49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerIndex: 0
+  triggerPressed: 0
+  steamPressed: 0
+  menuPressed: 0
+  padPressed: 0
+  padTouched: 0
+  gripped: 0
 --- !u!114 &114141001989341242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1874,6 +1896,18 @@ MonoBehaviour:
   verbose: 0
   createComponents: 1
   updateDynamically: 1
+--- !u!114 &114438026708949074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503196073479432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a863fe1f89759642a52584a901eb82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114086960125557434}
 --- !u!114 &114507934792432712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1913,6 +1947,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &114731809037741952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1662012491047562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a863fe1f89759642a52584a901eb82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114828856973772112}
+--- !u!114 &114828856973772112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258686526811222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7346a42905a29b347b1f492e8ad7b49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerIndex: 0
+  triggerPressed: 0
+  steamPressed: 0
+  menuPressed: 0
+  padPressed: 0
+  padTouched: 0
+  gripped: 0
 --- !u!114 &114910726666381086
 MonoBehaviour:
   m_ObjectHideFlags: 1
