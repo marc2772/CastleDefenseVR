@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 9fb3983da2536da44a58297f73fa5089
+timeCreated: 1505347138
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: GrassExtraThick
+    100004: GrassSingle1
+    100006: GrassSingle2
+    100008: GrassSingle3
+    100010: GrassThick
+    100012: GrassThin
+    100014: Landscape
+    100016: Rock1
+    100018: Rock2
+    100020: Rock3
+    100022: Rock4
+    100024: Rock5
+    100026: Rock6
+    100028: SmallTree1
+    100030: SmallTreeFoliage1
+    100032: SmallTreeFoliage2
+    100034: Tree1
+    100036: Tree2
+    100038: Tree3
+    100040: TreeFoliage1
+    100042: TreeFoliage10
+    100044: TreeFoliage2
+    100046: TreeFoliage3
+    100048: TreeFoliage4
+    100050: TreeFoliage5
+    100052: TreeFoliage6
+    100054: TreeFoliage7
+    100056: TreeFoliage8
+    100058: TreeFoliage9
+    400000: //RootNode
+    400002: GrassExtraThick
+    400004: GrassSingle1
+    400006: GrassSingle2
+    400008: GrassSingle3
+    400010: GrassThick
+    400012: GrassThin
+    400014: Landscape
+    400016: Rock1
+    400018: Rock2
+    400020: Rock3
+    400022: Rock4
+    400024: Rock5
+    400026: Rock6
+    400028: SmallTree1
+    400030: SmallTreeFoliage1
+    400032: SmallTreeFoliage2
+    400034: Tree1
+    400036: Tree2
+    400038: Tree3
+    400040: TreeFoliage1
+    400042: TreeFoliage10
+    400044: TreeFoliage2
+    400046: TreeFoliage3
+    400048: TreeFoliage4
+    400050: TreeFoliage5
+    400052: TreeFoliage6
+    400054: TreeFoliage7
+    400056: TreeFoliage8
+    400058: TreeFoliage9
+    2300000: GrassExtraThick
+    2300002: GrassSingle1
+    2300004: GrassSingle2
+    2300006: GrassSingle3
+    2300008: GrassThick
+    2300010: GrassThin
+    2300012: Landscape
+    2300014: Rock1
+    2300016: Rock2
+    2300018: Rock3
+    2300020: Rock4
+    2300022: Rock5
+    2300024: Rock6
+    2300026: SmallTree1
+    2300028: SmallTreeFoliage1
+    2300030: SmallTreeFoliage2
+    2300032: Tree1
+    2300034: Tree2
+    2300036: Tree3
+    2300038: TreeFoliage1
+    2300040: TreeFoliage10
+    2300042: TreeFoliage2
+    2300044: TreeFoliage3
+    2300046: TreeFoliage4
+    2300048: TreeFoliage5
+    2300050: TreeFoliage6
+    2300052: TreeFoliage7
+    2300054: TreeFoliage8
+    2300056: TreeFoliage9
+    3300000: GrassExtraThick
+    3300002: GrassSingle1
+    3300004: GrassSingle2
+    3300006: GrassSingle3
+    3300008: GrassThick
+    3300010: GrassThin
+    3300012: Landscape
+    3300014: Rock1
+    3300016: Rock2
+    3300018: Rock3
+    3300020: Rock4
+    3300022: Rock5
+    3300024: Rock6
+    3300026: SmallTree1
+    3300028: SmallTreeFoliage1
+    3300030: SmallTreeFoliage2
+    3300032: Tree1
+    3300034: Tree2
+    3300036: Tree3
+    3300038: TreeFoliage1
+    3300040: TreeFoliage10
+    3300042: TreeFoliage2
+    3300044: TreeFoliage3
+    3300046: TreeFoliage4
+    3300048: TreeFoliage5
+    3300050: TreeFoliage6
+    3300052: TreeFoliage7
+    3300054: TreeFoliage8
+    3300056: TreeFoliage9
+    4300000: SmallTreeFoliage1
+    4300002: SmallTreeFoliage2
+    4300004: TreeFoliage1
+    4300006: Tree1
+    4300008: TreeFoliage2
+    4300010: TreeFoliage10
+    4300012: TreeFoliage9
+    4300014: TreeFoliage8
+    4300016: TreeFoliage5
+    4300018: TreeFoliage3
+    4300020: TreeFoliage4
+    4300022: TreeFoliage6
+    4300024: Landscape
+    4300026: GrassSingle3
+    4300028: GrassSingle1
+    4300030: GrassSingle2
+    4300032: GrassThin
+    4300034: GrassThick
+    4300036: GrassExtraThick
+    4300038: Rock2
+    4300040: Rock3
+    4300042: Rock4
+    4300044: Rock5
+    4300046: Rock6
+    4300048: Rock1
+    4300050: SmallTree1
+    4300052: TreeFoliage7
+    4300054: Tree3
+    4300056: Tree2
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
