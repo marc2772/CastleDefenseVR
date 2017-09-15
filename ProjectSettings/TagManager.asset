@@ -11,6 +11,11 @@ TagManager:
   - Fader
   - dontmove
   - listlast
+  - RightHand
+  - LeftHand
+  - LeftFingers
+  - RightFingers
+  - CameraRig
   layers:
   - Default
   - TransparentFX
