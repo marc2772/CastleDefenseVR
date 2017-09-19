@@ -11,38 +11,41 @@ public class HandInteraction : MonoBehaviour
     private GameObject objectInHand;
     private GameObject objectColliding;
 
-    private Rigidbody rb;
-
+    private LayerMask grabbable;
 	private Animator animator;
 
-    private SteamVR_Controller.Device Controller
+    private SteamVR_Controller.Device controllerDevice
     {
         get { return SteamVR_Controller.Input((int)controller.controllerIndex); }
     }
 
     void OnEnable()
 	{
-		controller.TriggerClicked += CloseHand;
-		controller.TriggerUnclicked += OpenHand;
-        controller.TriggerClicked += Grab;
-        controller.TriggerUnclicked += ReleaseObject;
+		controller.Gripped += CloseHand;
+		controller.Ungripped += OpenHand;
+        controller.Gripped += Grab;
+        controller.Ungripped += ReleaseObject;
 	}
 
 	void OnDisable()
 	{
-		controller.TriggerClicked -= CloseHand;
-		controller.TriggerUnclicked -= OpenHand;
-        controller.TriggerClicked -= Grab;
-        controller.TriggerUnclicked -= ReleaseObject;
+		controller.Gripped -= CloseHand;
+		controller.Ungripped -= OpenHand;
+        controller.Gripped -= Grab;
+        controller.Ungripped -= ReleaseObject;
     }
 
 	void Awake()
 	{
 		animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
 	}
 
-	void CloseHand(object sender, ClickedEventArgs e)
+    private void Start()
+    {
+        grabbable = 1 << 16;
+    }
+
+    void CloseHand(object sender, ClickedEventArgs e)
 	{
 		animator.SetBool("close", true);
 	}
@@ -73,8 +76,8 @@ public class HandInteraction : MonoBehaviour
                 GetComponent<FixedJoint>().connectedBody = null;
                 Destroy(GetComponent<FixedJoint>());
 
-                objectInHand.GetComponent<Rigidbody>().velocity = velocityMultiplier * Controller.velocity;
-                objectInHand.GetComponent<Rigidbody>().angularVelocity = velocityMultiplier * Controller.angularVelocity;
+                objectInHand.GetComponent<Rigidbody>().velocity = velocityMultiplier * controllerDevice.velocity;
+                objectInHand.GetComponent<Rigidbody>().angularVelocity = velocityMultiplier * controllerDevice.angularVelocity;
             }
             objectInHand = null;
         }
@@ -87,7 +90,35 @@ public class HandInteraction : MonoBehaviour
         fixedJoint.breakTorque = 20000;
         return fixedJoint;
     }
-    
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & grabbable) != 0)
+        {
+            ObjectColliding = other.gameObject;
+        }
+
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & grabbable) != 0)
+        {
+            ObjectColliding = other.gameObject;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & grabbable) != 0)
+        {
+            if (other.gameObject.Equals(objectColliding))
+            {
+                ObjectColliding = null;
+            }
+        }
+    }
+
     public GameObject ObjectColliding
     {
 

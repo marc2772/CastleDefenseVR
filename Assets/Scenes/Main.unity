@@ -120,8 +120,7 @@ GameObject:
   - component: {fileID: 173505432}
   - component: {fileID: 173505431}
   - component: {fileID: 173505435}
-  - component: {fileID: 173505436}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,19 +206,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &173505436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 173505430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!1 &384038779
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,27 +218,13 @@ GameObject:
   - component: {fileID: 384038783}
   - component: {fileID: 384038782}
   - component: {fileID: 384038781}
-  - component: {fileID: 384038780}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &384038780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 384038779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &384038781
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -412,27 +384,13 @@ GameObject:
   - component: {fileID: 867194702}
   - component: {fileID: 867194701}
   - component: {fileID: 867194700}
-  - component: {fileID: 867194699}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &867194699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 867194698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &867194700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -512,7 +470,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &967181256
+--- !u!21 &935707735
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -557,27 +515,13 @@ GameObject:
   - component: {fileID: 971941836}
   - component: {fileID: 971941835}
   - component: {fileID: 971941834}
-  - component: {fileID: 971941833}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &971941833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 971941832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &971941834
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -696,12 +640,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1662012491047562, guid: 6cf8cf4435b1f514ab0527528d5e8583,
     type: 2}
   m_PrefabInternal: {fileID: 2079913050}
---- !u!114 &1217623825 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114731809037741952, guid: 6cf8cf4435b1f514ab0527528d5e8583,
-    type: 2}
-  m_PrefabInternal: {fileID: 2079913050}
-  m_Script: {fileID: 11500000, guid: 9a863fe1f89759642a52584a901eb82d, type: 3}
 --- !u!54 &1217623827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -729,8 +667,7 @@ GameObject:
   - component: {fileID: 1235976513}
   - component: {fileID: 1235976512}
   - component: {fileID: 1235976517}
-  - component: {fileID: 1235976516}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,19 +738,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1235976516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1235976511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &1235976517
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -965,7 +889,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: -0.035, y: 0.015, z: 0.01}
   m_Center: {x: -0.018, y: 0, z: 0}
---- !u!43 &1579452532
+--- !u!43 &1593778715
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1176,7 +1100,6 @@ GameObject:
   - component: {fileID: 1723490421}
   - component: {fileID: 1723490420}
   - component: {fileID: 1723490419}
-  - component: {fileID: 1723490418}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Untagged
@@ -1184,19 +1107,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1723490418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723490417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &1723490419
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1296,12 +1206,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1741632295 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114438026708949074, guid: 6cf8cf4435b1f514ab0527528d5e8583,
-    type: 2}
-  m_PrefabInternal: {fileID: 2079913050}
-  m_Script: {fileID: 11500000, guid: 9a863fe1f89759642a52584a901eb82d, type: 3}
 --- !u!1 &1790517303 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1838035008651820, guid: 6cf8cf4435b1f514ab0527528d5e8583,
@@ -1331,27 +1235,13 @@ GameObject:
   - component: {fileID: 1837976471}
   - component: {fileID: 1837976470}
   - component: {fileID: 1837976469}
-  - component: {fileID: 1837976468}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1837976468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1837976467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &1837976469
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1539,27 +1429,13 @@ GameObject:
   - component: {fileID: 2041467469}
   - component: {fileID: 2041467468}
   - component: {fileID: 2041467467}
-  - component: {fileID: 2041467466}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Sphere (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2041467466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2041467465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eb9387d36e24c343a98752f51342373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHand: {fileID: 1217623825}
-  leftHand: {fileID: 1741632295}
 --- !u!54 &2041467467
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1682,12 +1558,12 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 967181256}
+      objectReference: {fileID: 935707735}
     - target: {fileID: 33256661824124166, guid: 6cf8cf4435b1f514ab0527528d5e8583,
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1579452532}
+      objectReference: {fileID: 1593778715}
     - target: {fileID: 1896383382841188, guid: 6cf8cf4435b1f514ab0527528d5e8583, type: 2}
       propertyPath: m_IsActive
       value: 0
