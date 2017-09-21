@@ -470,39 +470,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &935707735
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &971941832
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,24 +839,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: -0.08, y: 0.09, z: 0.025}
   m_Center: {x: -0.04, y: -0.01, z: 0.005}
---- !u!1 &1525375839 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1954263823716182, guid: 6cf8cf4435b1f514ab0527528d5e8583,
-    type: 2}
-  m_PrefabInternal: {fileID: 2079913050}
---- !u!65 &1525375841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1525375839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: -0.035, y: 0.015, z: 0.01}
-  m_Center: {x: -0.018, y: 0, z: 0}
---- !u!43 &1593778715
+--- !u!43 &1508106594
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1017,6 +967,23 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1525375839 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1954263823716182, guid: 6cf8cf4435b1f514ab0527528d5e8583,
+    type: 2}
+  m_PrefabInternal: {fileID: 2079913050}
+--- !u!65 &1525375841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525375839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -0.035, y: 0.015, z: 0.01}
+  m_Center: {x: -0.018, y: 0, z: 0}
 --- !u!1 &1612943636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,12 +1525,12 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 935707735}
+      objectReference: {fileID: 2092885041}
     - target: {fileID: 33256661824124166, guid: 6cf8cf4435b1f514ab0527528d5e8583,
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1593778715}
+      objectReference: {fileID: 1508106594}
     - target: {fileID: 1896383382841188, guid: 6cf8cf4435b1f514ab0527528d5e8583, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -2029,3 +1996,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.015, z: 0.01}
   m_Center: {x: -0.02, y: 0, z: 0}
+--- !u!21 &2092885041
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

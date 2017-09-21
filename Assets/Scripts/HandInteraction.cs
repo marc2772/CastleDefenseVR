@@ -21,18 +21,30 @@ public class HandInteraction : MonoBehaviour
 
     void OnEnable()
 	{
-		controller.Gripped += CloseHand;
-		controller.Ungripped += OpenHand;
+		controller.Gripped += CloseThreeFingers;
+		controller.Ungripped += OpenThreeFingers;
         controller.Gripped += Grab;
         controller.Ungripped += ReleaseObject;
+
+        controller.TriggerClicked += CloseIndex;
+        controller.TriggerUnclicked += OpenIndex;
+
+        controller.PadTouched += CloseThumb;
+        controller.PadUntouched += OpenThumb;
 	}
 
 	void OnDisable()
 	{
-		controller.Gripped -= CloseHand;
-		controller.Ungripped -= OpenHand;
+		controller.Gripped -= CloseThreeFingers;
+		controller.Ungripped -= OpenThreeFingers;
         controller.Gripped -= Grab;
         controller.Ungripped -= ReleaseObject;
+
+        controller.TriggerClicked -= CloseIndex;
+        controller.TriggerUnclicked -= OpenIndex;
+
+        controller.PadTouched += CloseThumb;
+        controller.PadUntouched += OpenThumb;
     }
 
 	void Awake()
@@ -54,6 +66,37 @@ public class HandInteraction : MonoBehaviour
 	{
 		animator.SetBool("close", false);
 	}
+
+    void CloseThreeFingers(object sender, ClickedEventArgs e)
+    {
+        Debug.Log("hello");
+        animator.SetBool("three_fingers_close", true);
+    }
+
+    void OpenThreeFingers(object sender, ClickedEventArgs e)
+    {
+        animator.SetBool("three_fingers_close", false);
+    }
+
+    void CloseIndex(object sender, ClickedEventArgs e)
+    {
+        animator.SetBool("close_index", true);
+    }
+
+    void OpenIndex(object sender, ClickedEventArgs e)
+    {
+        animator.SetBool("close_index", false);
+    }
+
+    void CloseThumb(object sender, ClickedEventArgs e)
+    {
+        animator.SetBool("close_thumb", true);
+    }
+
+    void OpenThumb(object sender, ClickedEventArgs e)
+    {
+        animator.SetBool("close_thumb", false);
+    }
 
     public void Grab(object sender, ClickedEventArgs e)
     {
