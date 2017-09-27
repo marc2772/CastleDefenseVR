@@ -110,6 +110,12 @@ public class HandInteraction : MonoBehaviour
         }
     }
 
+    private void OnJointBreak(float breakForce)
+    {
+        handAnimation.OpenHand();
+        handAnimation.ShowHand();
+    }
+
     public GameObject ObjectColliding
     {
 
