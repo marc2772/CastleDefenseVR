@@ -11,6 +11,11 @@ TagManager:
   - Fader
   - dontmove
   - listlast
+  - CameraRig
+  - RightHand
+  - LeftHand
+  - RightFingers
+  - LeftFingers
   layers:
   - Default
   - TransparentFX
@@ -28,7 +33,7 @@ TagManager:
   - LitStairs2
   - Wall
   - TeleportPoints
-  - 
+  - Grabbable
   - 
   - 
   - 
