@@ -6,6 +6,7 @@ using Valve.VR;
 public class HandInteraction : MonoBehaviour
 {
 	public SteamVR_TrackedController controller;
+    public Transform head;
     public float velocityMultiplier = 1f;
 
     private GameObject objectInHand;
@@ -62,16 +63,26 @@ public class HandInteraction : MonoBehaviour
             {
                 handAnimation.OpenHand();
 
-                GetComponent<FixedJoint>().connectedBody = null;
-                Destroy(GetComponent<FixedJoint>());
+                RemoveLinkBetweenHandAndObjectInHand();
 
-                objectInHand.GetComponent<Rigidbody>().velocity = velocityMultiplier * controllerDevice.velocity;
-                objectInHand.GetComponent<Rigidbody>().angularVelocity = velocityMultiplier * controllerDevice.angularVelocity;
+                AddVelocityToObjectInHand();
 
                 handAnimation.ShowHand();
             }
             objectInHand = null;
         }
+    }
+
+    void RemoveLinkBetweenHandAndObjectInHand()
+    {
+        GetComponent<FixedJoint>().connectedBody = null;
+        Destroy(GetComponent<FixedJoint>());
+    }
+
+    void AddVelocityToObjectInHand() 
+    {
+        objectInHand.GetComponent<Rigidbody>().velocity = velocityMultiplier * (head.rotation * controllerDevice.velocity);
+        objectInHand.GetComponent<Rigidbody>().angularVelocity = velocityMultiplier * (head.rotation * controllerDevice.angularVelocity);
     }
 
     FixedJoint AddFixedJoint()
