@@ -64,7 +64,6 @@ public class HandInteraction : MonoBehaviour
                 handAnimation.OpenHand();
 
                 RemoveLinkBetweenHandAndObjectInHand();
-
                 AddVelocityToObjectInHand();
 
                 handAnimation.ShowHand();
